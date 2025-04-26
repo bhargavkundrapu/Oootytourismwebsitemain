@@ -1,5 +1,5 @@
 import "./index.css"
-import Enquiryform from "../EnquiryForm"
+import Enquiryform from "../Enquiryform"
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
