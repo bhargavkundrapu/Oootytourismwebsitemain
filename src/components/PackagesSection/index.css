@@ -1,0 +1,141 @@
+.packagedetailsection{
+    padding:20px;
+    
+    
+    background-size:cover;
+    background-color:#f5fafd;
+}
+.heading-packages{
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+    color:#448af2;
+    font-family: Roboto;
+   margin-bottom: 0px;
+    margin-top:30px;
+
+}
+.horigantal-line{
+    margin-bottom:50px;
+    width:450px;
+    border-style: solid;
+    border-width:1px;
+    border-color:rgb(164, 240, 65);
+}
+.packages-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+.packages-card{
+    width:300px;
+    height:400px;
+    margin-left:20px;
+    margin-bottom: 30px;
+    background-color:lab(98.17% -0.5 0.35);
+    box-shadow: rgba(7, 7, 7, 0.15) 3px 4px 2px 0px ;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px;
+    overflow:hidden;
+    cursor:pointer;
+    margin-right: 30px; 
+
+}
+.packages-card:hover{
+    z-index:1;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    
+
+}
+
+
+
+
+.package-image{
+    height:50%;
+    width:100%;
+    
+}
+
+
+.package-details{
+    padding-left:15px;
+    
+    
+    padding-bottom: 10px;
+
+    
+}
+.package-price-explore{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:90%;
+    margin-top:40px;
+   
+}
+.package-name{
+    font-size:25px;
+    font-weight:700;
+    color:#4B0082;
+    font-family:Cinzel ;
+    margin-top: 10px;
+    
+}
+.package-description{
+    font-size:18px;
+    
+    color:#64748b;
+    font-family: Roboto;
+    margin-top:30px;
+
+    
+}
+.package-price{
+    font-size:25px;
+    font-weight:600;
+    color:#1c5d99;
+    font-family: Roboto Slab;
+    margin-top: 10px;
+}
+.package-explore-container{
+    display:flex;
+    flex-direction:row;
+    margin-top: 5px;
+}
+.package-explore-container:hover{
+   
+    color:lab(85.21% -63.74 71.16);
+    z-index: index 3;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    
+}
+.package-explore{
+    font-size:18px;
+    font-weight:700;
+    color:lab(85.21% -63.74 71.16);
+    font-family: Poppins;
+    margin-top: 10px;
+    margin-right: 0px;
+    cursor:pointer;
+    text-decoration: none;
+}
+.package-explore:hover{
+    z-index:2;
+    color:lab(85.21% -63.74 71.16);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    
+}
+.arrow-icon{
+   
+   color: lab(85.21% -63.74 71.16);
+   margin-top: 13px;
+   margin-left: 5px;
+    
+}

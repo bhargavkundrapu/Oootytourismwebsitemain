@@ -1,0 +1,146 @@
+.activities-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: #2d3436;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .section-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 3px;
+    background-color: rgb(164, 240, 65);
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .activity-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    transform-origin: center;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .activity-card:hover .activity-image img {
+    transform: scale(1.1);
+  }
+  
+  .activity-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+  
+  .price-tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(34, 164, 93, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-top-left-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    opacity: 0.8;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+  .current-price {
+    font-size: 16px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .location {
+    color: #22a45d;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .activity-title {
+    color: #2d3436;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+  }
+  
+  .activity-description {
+    color: #636e72;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .activities-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    
+    .section-title {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .activities-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .activity-image {
+      height: 180px;
+    }
+    
+    .card-content {
+      padding: 15px;
+    }
+    
+    .activity-title {
+      font-size: 18px;
+    }
+  }

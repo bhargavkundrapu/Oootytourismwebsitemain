@@ -1,0 +1,87 @@
+.thala-banner {
+    width: 95%;
+    height: 200px;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/ooty-1655457424_bca80f81e8391ebdaaca.webp"); /* Replace with your actual Ooty image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .thala-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .thala-banner:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .thala-banner:hover::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  }
+
+  .banner-heading {
+    color: #d0ba11;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-tagline {
+    color:#f3f7f4;
+    font-size: 18px;
+    margin: 0;
+    max-width: 80%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .banner-heading {
+      font-size: 28px;
+    }
+    
+    .banner-tagline {
+      font-size: 16px;
+    }
+    .thala-banner {
+      width: 95%;
+      height: 200px;
+      background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/ooty-1655457424_bca80f81e8391ebdaaca.webp"); /* Replace with your actual Ooty image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      margin: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      
+    }
+  }

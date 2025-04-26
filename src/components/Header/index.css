@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* adjust based on your header height */
+    
+  }
+
+.navbar-container{
+    box-shadow: rgba(31, 45, 61, 0.15) 0px 3px 2px 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style:solid;
+    border-width:0px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+    width:100%;
+    background-color:#ffffff;
+    
+    
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    margin-right: 20px;
+    list-style-type: none;
+}
+.list-item{
+    margin-right:30px;
+    font-family: Roboto;
+    font-size: 18px;
+    color:rgb(56, 63, 72);
+    text-decoration: none;
+    text-align: center;
+    
+}
+.list-item:hover{
+    color:#448af2;
+    
+    cursor:pointer;
+}
+
+.logo-image{
+    width: 250px;
+    height:80px;
+    margin-left:40px;
+    margin-top:6px;
+}
+.burggerbutton-container{
+    display: none; /* Hide the burger button on desktop */
+}
+@media screen and (max-width:1010px) {
+    .nav-links{
+        display: none; /* Hide the links on mobile */
+    }
+    .burggerbutton-container{
+        display:inline-flex;
+        margin-right:7%;
+        margin-top: 15px;
+        
+    }
+}
+@media screen and (max-width:1010px) {
+    .logo-image{
+        width: 200px;
+        height:60px;
+        margin-left:15px;
+        margin-top:6px;
+    }
+}

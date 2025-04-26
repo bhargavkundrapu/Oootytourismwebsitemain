@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+.contact-page-bg {
+    background-image: url('https://th.bing.com/th/id/OIP.d41XDDLdE9dyt5RBrT8AkwHaEK?w=322&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    padding: 60px 0;
+}
+
+.contact-page-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.contact-page-wrapper {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-page-title-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-page-title {
+    font-family: 'Bree Serif', serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-page-subtitle {
+    font-size: 18px;
+    color: #e6e6e6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contact-page-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Enquiry Form Styles */
+
+
+.textareastyle:focus {
+    border-color: #448af2;
+    box-shadow: 0 0 0 2px rgba(68, 138, 242, 0.1);
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttonstyle {
+    background-color: #448af2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(68, 138, 242, 0.25);
+}
+
+.buttonstyle:hover {
+    background-color: #3678d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(68, 138, 242, 0.3);
+}
+
+.buttonstyle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(68, 138, 242, 0.2);
+}
+
+
+.contact-info-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-info-heading {
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #448af2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(68, 138, 242, 0.3);
+}
+
+.info-icon {
+    color: white;
+    font-size: 22px;
+}
+
+.info-content {
+    flex-grow: 1;
+}
+
+.info-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.info-content p {
+    font-size: 15px;
+    color: #666;
+    margin: 0 0 5px 0;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-page-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .enquiry-form-container,
+    .contact-info-section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .enquiry-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-page-title {
+        font-size: 28px;
+    }
+    
+    .enquiry-form-heading,
+    .contact-info-heading {
+        font-size: 22px;
+    }
+    
+    .contact-page-bg {
+       
+    }
+    .contact-page-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-right:50px;
+        margin-left: 0px;
+    }
+    .contact-info-section {
+        flex: 1;
+        min-width: 300px;
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-left:0px;
+    }
+}

@@ -1,0 +1,110 @@
+.footer {
+  background-color:#0d2436;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px 0 0 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 15px 20px;
+}
+
+.map-column {
+  flex: 1.5;
+}
+.logo {
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.company-name {
+  font-size: 24px;
+  margin: 10px 0 5px;
+}
+
+.company-tagline {
+  font-size: 14px;
+  color: lch(95.47% 12.14 141.32);
+  margin: 0 0 15px;
+}
+
+.column-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #448af2;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+ 
+}
+
+.contact-icon {
+  margin-right: 10px;
+  color: lch(95.47% 12.14 141.32);
+}
+
+.contact-item a, 
+.contact-item address {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.social-icon:hover {
+  color: #448af2;
+}
+.map {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+.footer-bottom {
+  background-color: #0d2436;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive ga untadi*/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    
+  }
+  
+  .footer-column {
+    width: 90%;
+  }
+  
+  .map {
+    height: 200px;
+  }
+}
