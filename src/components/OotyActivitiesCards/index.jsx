@@ -12,7 +12,7 @@ import cycling from '../../assets/cycling.jpg';
 import safa from '../../assets/safa.jpg';
 import avala from '../../assets/avala.jpg';
 import ebike from '../../assets/ebike.jpg';
-import Horse from '../../assets/Horse.jpg';
+import Horse from '../../assets/horse.jpg';
 import { FaHorse } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
